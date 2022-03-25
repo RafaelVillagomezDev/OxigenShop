@@ -1,0 +1,24 @@
+{
+  "name": "oxigenshop",
+  "version": "1.0.0",
+  "description": "Proyect Shop ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "scss": "node-sass -watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelVillagomezDev/OxigenShop.git"
+  },
+  "author": "Rafael villagomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelVillagomezDev/OxigenShop/issues"
+  },
+  "homepage": "https://github.com/RafaelVillagomezDev/OxigenShop#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.49.9"
+  }
+}
