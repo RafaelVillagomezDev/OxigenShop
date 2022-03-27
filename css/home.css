@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   display: flex;
   flex-direction: row;
@@ -26,7 +26,7 @@ body {
   font-size: 32px;
   font-style: normal;
   line-height: 37px;
-  color: #08A6E4;
+  color: #08a6e4;
 }
 
 #menu {
@@ -51,7 +51,7 @@ body {
   line-height: 15px;
   letter-spacing: 3.28px;
   text-transform: uppercase;
-  color: #A5A5A5;
+  color: #a5a5a5;
   font-style: normal;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
@@ -59,7 +59,7 @@ body {
 
 #menu ul li a:hover {
   color: black;
-  border-bottom: 4px solid #08A6E4;
+  border-bottom: 4px solid #08a6e4;
 }
 
 .brand-section {
@@ -91,10 +91,10 @@ body {
 }
 
 #open-shop {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Open sans", sans-serif;
   font-size: 16px;
-  background-color: #08A6E4;
+  background-color: #08a6e4;
   width: 440px;
   height: 67px;
   box-shadow: 5px 10px 14px rgba(62, 172, 212, 0.29);
@@ -145,12 +145,12 @@ body {
 
 .entries p {
   font-size: 16px;
-  color: #A5A5A5;
+  color: #a5a5a5;
 }
 
 /*Section CARDS*/
 section {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
 .grid-card {
@@ -165,8 +165,8 @@ section {
 .card {
   width: 74%;
   padding: 1rem 1rem;
-  background-color: #FFFFFF;
-  border: 1px solid #E8E9ED;
+  background-color: #ffffff;
+  border: 1px solid #e8e9ed;
   border-radius: 5px;
 }
 
@@ -193,15 +193,15 @@ section {
 }
 
 #text-laptop p {
-  border-bottom: 4px solid #FB3B64;
+  border-bottom: 4px solid #fb3b64;
 }
 
 #text-phone {
-  border-bottom: 4px solid #08A6E4;
+  border-bottom: 4px solid #08a6e4;
 }
 
 #text-voice {
-  border-bottom: 4px solid #55DFB4;
+  border-bottom: 4px solid #55dfb4;
 }
 
 .flexbox {
@@ -234,7 +234,7 @@ section {
   left: 100px;
   z-index: 0;
   transform: rotate(140deg);
-  background-color: #FB3B64;
+  background-color: #fb3b64;
   border-radius: 41px;
 }
 
@@ -246,7 +246,7 @@ section {
   -webkit-border-radius: 50%;
   border-radius: 100%;
   left: 8px;
-  background-color: #08A6E4;
+  background-color: #08a6e4;
 }
 
 /* Cards Price */
@@ -263,7 +263,7 @@ section {
 .flex-price {
   width: 372px;
   height: 421px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 18px;
 }
@@ -272,9 +272,49 @@ section {
   height: 30%;
 }
 
+.flex-price:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+}
+
+.text-price-text h1 {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+}
+
+.card-price-text span {
+  font-size: 46px;
+  line-height: 64px;
+  font-weight: 300;
+  font-family: "Open Sans";
+  font-style: normal;
+  color: #fb3b64;
+}
+
+.card-price-box {
+  padding-top: 1rem;
+}
+
+.card-price-box label {
+  line-height: 2rem;
+}
+
+.contact {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+input[type=checkbox] {
+  appearance: auto;
+  background-color: #08a6e4;
+}
+
 .boton-card {
   position: static;
-  color: #F7F7F7;
+  color: #f7f7f7;
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 13px;
@@ -287,13 +327,108 @@ section {
   border: 0;
 }
 
-.flex-price:hover {
-  transform: scale(1.1);
-  box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+/*Form Question*/
+.form-question {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem 2rem;
+  gap: 3rem;
+}
+
+#question-div h1 {
+  font-size: 49px;
+  line-height: 58px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", sans-serif;
+}
+
+#question-div p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", sans-serif;
+}
+
+input[type=text] {
+  min-width: 420px;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #95989a;
+}
+
+.name-text {
+  color: #08a6e4;
+  letter-spacing: 3.28px;
+  line-height: 15px;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.form-box {
+  width: 400px;
+}
+
+.form-box label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
+}
+
+#btn-send {
+  color: #f7f7f7;
+  position: absolute;
+  width: 176px;
+  height: 50px;
+  right: 0px;
+  top: 44px;
+  border: 0px;
+  background: #08a6e4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  border-radius: 35px;
+}
+
+/*Footer*/
+footer {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8rem;
+  padding: 0rem 5rem;
+}
+
+footer img {
+  margin-right: 2rem;
+}
+
+footer h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 30px;
+  /* identical to box height, or 115% */
+  color: #08a6e4;
+}
+
+footer p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  color: #a5a5a5;
 }
 
 /*---------Mobilee Layout------------*/
-@media (max-width: 682px) {
+@media (max-width: 688px) {
   #sell-more h1 {
     font-size: 35px;
   }
@@ -344,19 +479,81 @@ section {
   .cards-price {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
   }
 
   .flex-price {
     width: 293px;
     height: 251px;
-    border: 1px solid #FB3B64;
+    border: 1px solid #3f5546;
     box-sizing: border-box;
     border-radius: 18px;
   }
 
   .boton-card {
     top: 3rem;
+  }
+
+  .card-price-text h1 {
+    font-size: 20px;
+    line-height: 12px;
+  }
+
+  .card-price-text span {
+    font-size: 25px;
+    line-height: 6px;
+  }
+
+  .card-price-box label {
+    line-height: 0rem;
+  }
+
+  .card-price-box {
+    padding-top: 0rem;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  /*Form question*/
+  #question-form {
+    margin: 0rem;
+    width: 320px;
+  }
+
+  .form-box {
+    width: 320px;
+  }
+
+  .form-question {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0rem;
+  }
+
+  .question-div h1 {
+    font-size: 49px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400px;
+    line-height: 58px;
+  }
+
+  input[type=text] {
+    min-width: 320px;
+  }
+
+  /*FOOTER */
+  footer {
+    padding: 0rem 2rem;
+  }
+
+  #logo {
+    padding: 0vh;
+  }
+
+  footer p {
+    font-size: 10px;
   }
 }
 /*Card Mobile*/

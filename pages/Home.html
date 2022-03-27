@@ -116,37 +116,55 @@
           <h1 style="text-align: center; font-size: 36px; line-height: 42px; font-family: ''Raleway', sans-serif'; font-weight: 400; margin-top: 127px;">Pricin</h1>
           <div class="cards-price">
             <div class="flex-price" style="border: 1px solid #fb3b64;">
-              <div id="card-basic-text">
+              <div  class="card-price-text" id="card-basic-text">
                 <h1>Basic</h1>
-                <h2>25$</h2>
+                <span>0$</span>
               </div>
-              <div id="card-basic-box">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime laudantium animi libero optio praesentium, repellat nam cum sequi vel fugiat, tempora temporibus obcaecati? Ab numquam reprehenderit voluptas consequatur, minus temporibus?</p>
+              <div  class="card-price-box" id="card-basic-box">
+              
+                <label class="form-control"><input type="checkbox" id="cbox1" value="100"> 100 MB HDD</label><br>
+                <label class="form-control"><input type="checkbox" id="cbox1" value="1"> 1 Subdomain</label><br>
+                <label class="form-control"><input type="checkbox" id="cbox1" value="2"> 2 E-mails</label><br>
+                <label class="form-control"><input type="checkbox" id="cbox1" value="2"> Two years license</label><br>
+                <label class="form-control"><input type="checkbox" id="cbox1" value="support"> Full support</label><br>
+
               </div>
               <button class="boton-card" style="background-color: #fb3b64;" >Begin</button>
             </div>
 
             <div class="flex-price" style="border: 1px solid #07ACE6;">
-              <div id="card-profesional-text">
+              <div class="card-price-text" id="card-profesional-text">
                 <h1>Profesional</h1>
-                <h2>25$</h2>
+                <span style="color: #07ACE6;">25$</span>
               </div>
-              <div id="card-profesional-box">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime laudantium animi libero optio praesentium, repellat nam cum sequi vel fugiat, tempora temporibus obcaecati? Ab numquam reprehenderit voluptas consequatur, minus temporibus?</p>
+              <div class="card-price-box"  id="card-profesional-box">
+               
+                <label  class="form-control"><input type="checkbox" id="cbox1" value="500"> 500 MB HDD</label><br>
+                <label class="form-control"><input type="checkbox" id="cbox1" value="2"> 2 Subdomain</label><br>
+                <label class="form-control"><input type="checkbox" id="cbox1" value="5"> 5 E-mails</label><br>
+                <label class="form-control"><input type="checkbox" id="cbox1" value="1"> Two years license</label><br>
+                <label class="form-control"><input type="checkbox" id="cbox1" value="support"> Full support</label><br>
+
               </div>
               <button class="boton-card" style="background-color: #07ACE6;" >Begin</button>
             </div>
 
             <div class="flex-price" id="card-premium" style="border:1px solid #55DFB4">
-              <div id="card-profesional-text">
+              <div  class="card-price-text" id="card-profesional-text" >
                 <h1>Premium</h1>
-                <h2>25$</h2>
+                <span style="color: #55DFB4;">60$</span>
+                
               </div>
-              <div id="card-profesional-box">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime laudantium animi libero optio praesentium, repellat nam cum sequi vel fugiat, tempora temporibus obcaecati? Ab numquam reprehenderit voluptas consequatur, minus temporibus?</p>
-      
+              <div  class="card-price-box"  id="card-profesional-box">
+                
+                <label class="form-control"><input type="checkbox" id="cbox1" value="2"> 2 GB HDD</label><br>
+                <label class="form-control"><input type="checkbox" id="cbox1" value="5"> 5 Subdomain</label><br>
+                <label class="form-control"><input type="checkbox" id="cbox1" value="20"> 20 E-mails</label><br>
+                <label class="form-control"><input type="checkbox" id="cbox1" value="2"> Two year license</label><br>
+                <label class="form-control"><input type="checkbox" id="cbox1" value="support"> Full support</label><br>
+
               </div>
-              <button class="boton-card" style="background-color: #55DFB4;" >Begin</button>
+              <button class="boton-card" style="background-color: #55df93;" >Begin</button>
                 
               
             </div>
@@ -154,11 +172,51 @@
           </div>
         
       </section>
-
-      <h1>Formulario</h1>
-
+      <!--Cuestionario de formulario-->
       
-     
+      <div class="form-question">
+        <div id="question-div">
+          <h1>Any questions?</h1>
+          <p>Leave your email address or call us!</p>
+          
+          <span class="contact" style="padding-right: 2rem;"><img src="../icons/mensaje.png"><a  href="mailto:info@bestshop.xyz" style="text-decoration: none; position: relative; display: inline-block; bottom: 5px; left: 3px; font-size: 18px;line-height: 22px; color:#A5A5A5  ">info@bestshop.xyz</a></span>
+          
+          <span  class="contact" style="padding-right: 2rem;"><img src="../icons/phone.png"><a href="tel:123 456 789" style="text-decoration: none; position: relative; bottom: 5px; left: 3px; display: inline-block; font-size: 18px; font-style: normal; font-weight: 400; line-height: 22px; color:#A5A5A5"><em>123 456 789 </em></a></span>
+        </div>
+        <div id="question-form">
+          <form>
+            <div style="line-height: 2.5em;" >
+              <label for="name" class="name-text">Name</label><br>
+              <input type="text" id="name"  />
+            </div>
+            <div>
+              <label for="name"  class="name-text">Email</label><br>
+              <input type="text" id="name"  />
+            </div>
+           <div class="form-box">
+            <input type="checkbox" value="acept" >
+            <label>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
+          </div>
+          <div style="position: relative;">
+            <button id="btn-send" value="send">Here</button>
+          </div>
+          
+          </form>
+        </div>
+      </div>
+     <!--Footer-->
+     <footer >
+       
+         <div id="logo" style="padding: 0vh;">
+          <h1>OXYGEN Shop</h1>
+          <p>&copy;OXYGEN All Rights Reserved</p>
+         </div>
+         <div id="logo">
+            <img src="../icons/twitter.png"/>
+            <img src="../icons/facebook.png"/>
+         </div>
+       
+     </footer>
 
 
     </div>
