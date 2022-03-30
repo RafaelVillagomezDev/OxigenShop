@@ -14,10 +14,15 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
   padding-left: 4vw;
+}
+
+.button-menu {
+  display: none;
 }
 
 #logo h1 {
@@ -439,6 +444,11 @@ footer p {
 
   #open-shop {
     width: 220px;
+  }
+
+  /*BUTTON BURGUER*/
+  .button-menu {
+    display: block;
   }
 
   /*Section entries*/

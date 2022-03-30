@@ -23,10 +23,17 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #logo {
   padding-left: 4vw;
+}
+
+.button-menu {
+  display: none;
 }
 
 #logo h1 {
@@ -507,6 +514,10 @@ footer p {
   }
   #open-shop {
     width: 220px;
+  }
+  /*BUTTON BURGUER*/
+  .button-menu {
+    display: block;
   }
   /*Section entries*/
   .brand-section h1 {
