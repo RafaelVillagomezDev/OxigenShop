@@ -4,12 +4,78 @@
 body {
   min-width: 320px;
   margin: 0px;
+  font-family:'Raleway',sans-serif;
 }
 
 //Navbar Desktop//
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap');
 
+/*POPPUP*/
+
+.hidden{
+  display: none!important;
+}
+
+.popup{
+  
+  position:fixed;
+  top:30%;
+  left: 30%;
+  z-index:1;
+  background-color: #ffffff;
+  border-radius: 3%;
+  box-shadow: 5px 10px 27px rgba(116, 118, 119, 0.29);
+  width: 42%;
+  height:28rem;
+  padding: 2rem 2rem;
+  color: #000000;
+
+}
+
+.popup h1{
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+#closeMark{
+
+  position: absolute;
+  top:1rem;
+  right: 2rem;
+  
+}
+
+
+.popup p{
+   font-weight: 300;
+   font-size: 18px;
+}
+
+#emailText{
+  min-width: 94% !important;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #95989a;
+
+
+}
+
+#btn-pop{
+  position:absolute;
+  width: 8rem;
+  height: 3rem;
+  bottom:2rem;
+  right:2rem;
+  border: 0px;
+  background: #08a6e4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  border-radius: 35px;
+}
+
+
+/*Navbar*/
 .navbar {
   background-color: #ffffff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
@@ -448,6 +514,16 @@ footer p {
 /*---------Mobilee Layout------------*/
 
 @media (max-width: 688px) {
+  /*POPUP*/
+
+  .popup {
+    height: 38rem;
+    width: 70%;
+    left: 18%;
+    
+ }
+
+  /*NAVBAR*/
   #sell-more h1 {
     font-size: 35px;
   }
@@ -582,9 +658,16 @@ footer p {
 
 }
 
-/*Card Mobile*/
+/*Card TABLET*/
 
-@media (max-width: 782px) {
+@media (max-width: 810px) {
+  /*POPUP*/
+
+  .popup {
+    height: 34rem;
+ }
+
+  /*LOGO*/
   #logo h1 {
     font-size: 15px;
   }
@@ -595,4 +678,16 @@ footer p {
     justify-content: center;
     text-align: justify;
   }
+}
+
+@media (max-width: 1356px) {
+  /*POPUP*/
+
+
+  /*LOGO*/
+  .popup {
+     min-height: 30rem;
+  }
+
+ 
 }

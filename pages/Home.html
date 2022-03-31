@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/home.css" />
     <script src="https://kit.fontawesome.com/c2d2701e65.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container-fluid">
@@ -191,24 +195,24 @@
           <span  class="contact" style="padding-right: 2rem;"><img src="../icons/phone.png"><a href="tel:123 456 789" style="text-decoration: none; position: relative; bottom: 5px; left: 3px; display: inline-block; font-size: 18px; font-style: normal; font-weight: 400; line-height: 22px; color:#A5A5A5"><em>123 456 789 </em></a></span>
         </div>
         <div id="question-form">
-          
+           
             <div style="line-height: 2.5em;" >
               <label for="name" class="name-text">Name</label><br>
-              <input type="text" id="name"  />
+              <input type="text" id="name" required  />
             </div>
             <div>
               <label for="name"  class="name-text">Email</label><br>
-              <input type="text" id="email"  />
+              <input type="text" id="email"  required/>
             </div>
            <div class="form-box">
-            <input type="checkbox" value="acept" >
+            <input type="checkbox" value="acept" id="check-val" >
             <label>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
           </div>
           <div style="position: relative;">
             <button id="btn-send" value="send" onclick="send()">Send</button>
           </div>
           
-         
+     
         </div>
       </div>
      <!--Footer-->
@@ -224,7 +228,22 @@
          </div>
        
      </footer>
-
+     <!--Modal-->
+     <div class="hidden popup">
+        <h1 >New Sales !!</h1>
+        <i class="fa-solid fa-xmark" id="closeMark"  ></i>
+     
+        <p>Get the lastest content and best deals in your inbox every day!</p>
+        <div style="line-height: 2.5em;" >
+          <label for="emailText" class="name-text" style="font-weight: 700;">EMAIL</label><br>
+          <input type="text" style="padding-top: 2rem;" id="emailText" required  />
+        </div>
+        
+          <input type="checkbox" value="acept" id="check-val" >
+          <label style="overflow: hidden; margin-bottom: 2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ducimus minus nobis optio soluta fugiat explicabo culpa sapiente amet mollitia temporibus, molestiae vitae cumque consequatur, incidunt aliquid repudiandae commodi debitis!</label>
+          <button id="btn-pop" value="send" onclick="send()">Send</button>
+        </div>
+     </div>
 
     </div>
   </body>
