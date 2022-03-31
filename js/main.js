@@ -130,7 +130,7 @@ function postNews(mail){
 },5000)
 
 
-document.querySelector("#closeMark").addEventListener('click',function(){
+document.querySelector("#closeMark").addEventListener('click',()=>{
 
     document.querySelector(".popup").classList.add('hidden');
 
@@ -150,3 +150,25 @@ function update(){
     requestAnimationFrame(update);
     //callback
 }
+
+/*Button Up */
+
+document.getElementById("btn-up").addEventListener('click',()=>{
+  
+    
+    window.scrollTo(0,0);
+
+})
+
+/*NAVBAR BURGUER*/
+
+/*OPEN MENU BURGUER*/
+document.getElementById("button-burguer").addEventListener('click',()=>{
+    document.querySelector(".nav-mobile").classList.remove('hidden-nav');
+})
+
+/*CLOSE MENU BURGUER*/
+
+document.getElementById("close-nav").addEventListener('click',()=>{
+    document.querySelector(".nav-mobile").classList.add('hidden-nav');
+})

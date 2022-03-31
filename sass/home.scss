@@ -11,6 +11,18 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap');
 
+/*ARROE BTN*/
+#btn-up{
+  position:fixed;
+  bottom: 8rem;
+  right: 5rem;
+  background-color:#ffffff;
+  padding: 1rem;
+  border-radius:360px;
+  border: #08a6e4 solid 2px;
+}
+
+
 /*SCROLL BAR*/
 .scroll-bar{
 
@@ -32,6 +44,9 @@ body {
   display: none!important;
 }
 
+.hidden-nav{
+  display: none!important;
+}
 .popup{
   
   position:fixed;
@@ -87,6 +102,12 @@ body {
   background: #08a6e4;
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
   border-radius: 35px;
+}
+
+
+/*Navbar mobile*/
+#nav-mobile{
+  display: none;
 }
 
 
@@ -538,6 +559,7 @@ footer p {
     
  }
 
+
   /*NAVBAR*/
   #sell-more h1 {
     font-size: 35px;
@@ -550,9 +572,73 @@ footer p {
     width: 220px;
   }
 
+  #menu{
+    display: none;
+  }
+
+  #logo{
+    margin-left: 2rem;
+    
+  }
+
+  .nav-mobile{
+    
+    position: fixed; 
+    display: flex; 
+    align-items: center ; 
+    top: 0;
+    width: 100%; 
+    height:20%;
+    gap: 2rem;
+    background-color: #07ACE6;
+    z-index: 2;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  }
+
+  .nav-mobile ul li a {
+    text-decoration: none;
+    width: 72px;
+    height: 15px;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 3.28px;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .nav-mobile ul {
+    padding-top: 20px;
+    list-style-type: none;
+  }
+  
+  .nav-mobile ul li {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .nav-mobile ul li a:hover {
+    color: black;
+    border-bottom: 4px solid #08a6e4;
+  }
+
+  #close-nav{
+    position: absolute;
+    top:1rem;
+    right: 2rem;
+  }
+
+  .hidden-nav{
+    display: none!important;
+  }
+
+
   /*BUTTON BURGUER*/
   .button-menu{
     display: block;
+    margin-right: 1rem;
   }
 
   /*Section entries*/
