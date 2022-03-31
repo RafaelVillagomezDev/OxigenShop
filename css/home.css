@@ -9,6 +9,20 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+/*SCROLL BAR*/
+.scroll-bar {
+  position: fixed;
+  width: 100%;
+  height: 10px;
+  z-index: 1;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #08a6e4;
+}
+
 /*POPPUP*/
 .hidden {
   display: none !important;
