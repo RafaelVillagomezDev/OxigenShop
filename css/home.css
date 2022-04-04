@@ -1,0 +1,786 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0px;
+  font-family: "Raleway", sans-serif;
+}
+
+#container-background {
+  opacity: 80%;
+}
+
+/*ARROE BTN*/
+#btn-up {
+  position: fixed;
+  bottom: 8rem;
+  right: 5rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 360px;
+  border: #08a6e4 solid 2px;
+}
+
+/*SCROLL BAR*/
+.scroll-bar {
+  position: fixed;
+  width: 100%;
+  height: 10px;
+  z-index: 1;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #08a6e4;
+}
+
+/*POPPUP*/
+.hidden {
+  display: none !important;
+}
+
+.hidden-nav {
+  display: none !important;
+}
+
+.popup {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  z-index: 1;
+  background-color: #ffffff;
+  border-radius: 3%;
+  box-shadow: 5px 10px 27px rgba(116, 118, 119, 0.29);
+  width: 42%;
+  height: 28rem;
+  padding: 2rem 2rem;
+  color: #000000;
+}
+
+.popup h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+#closeMark {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.popup p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#emailText {
+  min-width: 94% !important;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #95989a;
+}
+
+#btn-pop {
+  position: absolute;
+  width: 8rem;
+  height: 3rem;
+  bottom: 2rem;
+  right: 2rem;
+  border: 0px;
+  background: #08a6e4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  border-radius: 35px;
+}
+
+/*Navbar mobile*/
+#nav-mobile {
+  display: none;
+}
+
+/*Navbar*/
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  padding-left: 4vw;
+}
+
+.button-menu {
+  display: none;
+}
+
+#logo h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  font-style: normal;
+  line-height: 37px;
+  color: #08a6e4;
+}
+
+#pricing {
+  text-align: center;
+  font-size: 36px;
+  line-height: 42px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-top: 127px;
+}
+
+#menu {
+  padding-right: 4vw;
+}
+
+#menu ul {
+  padding-top: 20px;
+  list-style-type: none;
+}
+
+#menu ul li {
+  display: inline;
+  margin-left: 120px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  width: 72px;
+  height: 15px;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 3.28px;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+#menu ul li a:hover {
+  color: black;
+  border-bottom: 4px solid #08a6e4;
+}
+
+.brand-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sell-more {
+  text-align: center;
+}
+
+#sell-more h1 {
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 49px;
+  line-height: 57px;
+}
+
+#sell-more p {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  font-style: normal;
+  color: #000000;
+}
+
+#open-shop {
+  color: #ffffff;
+  font-family: "Open sans", sans-serif;
+  font-size: 16px;
+  background-color: #08a6e4;
+  width: 440px;
+  height: 67px;
+  box-shadow: 5px 10px 14px rgba(62, 172, 212, 0.29);
+  border: 0;
+  border-radius: 40px;
+}
+
+#laptop {
+  width: 100%;
+}
+
+.brand-section h1 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#section-entries {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  gap: 16%;
+}
+
+.circle {
+  position: relative;
+  width: 62.71px;
+  height: 62.71px;
+  border-radius: 32px;
+}
+
+.circle img {
+  position: relative;
+  left: 33px;
+}
+
+.entries {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+
+.entries p {
+  font-size: 16px;
+  color: #a5a5a5;
+}
+
+#check-val2 {
+  width: 24px;
+  height: 22px;
+}
+
+/*Section CARDS*/
+section {
+  background-color: #f7f7f7;
+}
+
+.grid-card {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.card {
+  width: 74%;
+  padding: 1rem 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e8e9ed;
+  border-radius: 5px;
+}
+
+.card-text {
+  padding: 0 3rem;
+  color: #000000;
+}
+
+.card-text h1 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.card-text p {
+  line-height: 22px;
+  font-family: "Open sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 12px;
+}
+
+#eyeliner-laptop {
+  background-color: #FB3B64;
+  width: 80%;
+  height: 4px;
+}
+
+#eyeliner-phone {
+  background-color: #08A6E4;
+  width: 80%;
+  height: 4px;
+}
+
+#eyeliner-voice {
+  background-color: #55DFB4;
+  width: 80%;
+  height: 4px;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+
+.figura {
+  position: relative;
+  margin-top: 2rem;
+}
+
+#laptop-img {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+}
+
+#phone-img {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+}
+
+#figura-laptop {
+  position: absolute;
+  width: 180px;
+  height: 140px;
+  bottom: 55px;
+  left: 100px;
+  z-index: 0;
+  transform: rotate(140deg);
+  background-color: #fb3b64;
+  border-radius: 41px;
+}
+
+#figura-phone {
+  position: relative;
+  width: 230px;
+  height: 220px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 100%;
+  left: 8px;
+  background-color: #08a6e4;
+}
+
+/* Cards Price */
+.cards-price {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 3rem;
+}
+
+.flex-price {
+  width: 372px;
+  height: 421px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 18px;
+}
+
+.flex-price div {
+  height: 30%;
+}
+
+.flex-price:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+}
+
+.text-price-text h1 {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+}
+
+.card-price-text span {
+  font-size: 46px;
+  line-height: 64px;
+  font-weight: 300;
+  font-family: "Open Sans";
+  font-style: normal;
+  color: #fb3b64;
+}
+
+.card-price-box {
+  padding-top: 1rem;
+}
+
+.card-price-box label {
+  line-height: 2rem;
+}
+
+.contact {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+input[type=checkbox] {
+  appearance: auto;
+  background-color: #08a6e4;
+}
+
+#check-val {
+  width: 22px;
+  height: 22px;
+}
+
+.boton-card {
+  position: static;
+  color: #f7f7f7;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 13px;
+  position: relative;
+  top: 7rem;
+  width: 165px;
+  height: 50px;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  border-radius: 23px;
+  border: 0;
+}
+
+/*Form Question*/
+.form-question {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem 2rem;
+  gap: 3rem;
+}
+
+#question-div h1 {
+  font-size: 49px;
+  line-height: 58px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Raleway", sans-serif;
+}
+
+#question-div p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Open Sans", sans-serif;
+}
+
+input[type=text] {
+  min-width: 420px;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #95989a;
+}
+
+.name-text {
+  color: #08a6e4;
+  letter-spacing: 3.28px;
+  line-height: 15px;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.form-box {
+  width: 400px;
+}
+
+.form-box label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
+}
+
+#btn-send {
+  color: #f7f7f7;
+  position: absolute;
+  width: 176px;
+  height: 50px;
+  right: 0px;
+  top: 44px;
+  border: 0px;
+  background: #08a6e4;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+  border-radius: 35px;
+}
+
+/*Footer*/
+footer {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8rem;
+  padding: 0rem 5rem;
+}
+
+footer img {
+  margin-right: 2rem;
+}
+
+footer h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 30px;
+  /* identical to box height, or 115% */
+  color: #08a6e4;
+}
+
+footer p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  color: #a5a5a5;
+}
+
+/*---------Mobilee Layout------------*/
+@media (max-width: 688px) {
+  /*POPUP*/
+  .popup {
+    height: 38rem;
+    width: 70%;
+    left: 18%;
+  }
+
+  /*NAVBAR*/
+  #sell-more h1 {
+    font-size: 35px;
+  }
+
+  #sell-more p {
+    font-size: 15px;
+  }
+
+  #open-shop {
+    width: 220px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #logo {
+    margin-left: 2rem;
+  }
+
+  .nav-mobile {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    gap: 2rem;
+    background-color: #07ACE6;
+    z-index: 2;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  }
+
+  .nav-mobile ul li a {
+    text-decoration: none;
+    width: 72px;
+    height: 15px;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 3.28px;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .nav-mobile ul {
+    padding-top: 20px;
+    list-style-type: none;
+  }
+
+  .nav-mobile ul li {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .nav-mobile ul li a:hover {
+    color: black;
+    border-bottom: 4px solid #08a6e4;
+  }
+
+  #close-nav {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+
+  .hidden-nav {
+    display: none !important;
+  }
+
+  /*BUTTON BURGUER*/
+  .button-menu {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  /*Section entries*/
+  .brand-section h1 {
+    font-size: 30px;
+    font-weight: 300px;
+    line-height: 35px;
+  }
+
+  #section-entries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Card Electronics*/
+  .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+  }
+
+  #text-laptop p {
+    border-bottom: none;
+  }
+
+  #text-phone {
+    border-bottom: none;
+  }
+
+  #text-voice {
+    border-bottom: none;
+  }
+
+  /*Card */
+  .cards-price {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-price {
+    width: 293px;
+    height: 251px;
+    border: 1px solid #3f5546;
+    box-sizing: border-box;
+    border-radius: 18px;
+  }
+
+  .boton-card {
+    top: 3rem;
+  }
+
+  .card-price-text h1 {
+    font-size: 20px;
+    line-height: 12px;
+  }
+
+  .card-price-text span {
+    font-size: 25px;
+    line-height: 6px;
+  }
+
+  .card-price-box label {
+    line-height: 0rem;
+  }
+
+  .card-price-box {
+    padding-top: 0rem;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  /*Form question*/
+  #question-form {
+    margin: 0rem;
+    width: 320px;
+  }
+
+  .form-box {
+    width: 320px;
+  }
+
+  .form-question {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0rem;
+  }
+
+  .question-div h1 {
+    font-size: 49px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400px;
+    line-height: 58px;
+  }
+
+  input[type=text] {
+    min-width: 320px;
+  }
+
+  /*FOOTER */
+  footer {
+    padding: 0rem 2rem;
+  }
+
+  #logo {
+    padding: 0vh;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}
+/*Card TABLET*/
+@media (max-width: 810px) {
+  /*POPUP*/
+  .popup {
+    height: 34rem;
+  }
+
+  /*LOGO*/
+  #logo h1 {
+    font-size: 15px;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+  }
+}
+@media (max-width: 1356px) {
+  /*POPUP*/
+  /*LOGO*/
+  .popup {
+    min-height: 30rem;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
