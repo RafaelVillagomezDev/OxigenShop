@@ -11,6 +11,12 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap');
 
+//Container //
+#container-background{
+  opacity: 80%;
+}
+
+
 /*ARROE BTN*/
 #btn-up{
   position:fixed;
@@ -138,6 +144,14 @@ body {
   color: #08a6e4;
 }
 
+#pricing{
+  text-align: center; 
+  font-size: 36px;
+   line-height: 42px;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 400; margin-top: 127px;
+}
+
 #menu {
   padding-right: 4vw;
 }
@@ -260,6 +274,12 @@ body {
   color: #a5a5a5;
 }
 
+
+#check-val2{
+  width: 24px;
+  height: 22px;
+}
+
 /*Section CARDS*/
 
 section {
@@ -305,17 +325,25 @@ section {
   padding-bottom: 12px;
 }
 
-#text-laptop p {
-  border-bottom: 4px solid #fb3b64;
+ #eyeliner-laptop{
+   background-color: #FB3B64;
+   width: 80%;
+   height:4px;
+ }
+
+ #eyeliner-phone{
+  background-color: #08A6E4;
+  width: 80%;
+  height:4px;
 }
 
-#text-phone {
-  border-bottom: 4px solid #08a6e4;
+ #eyeliner-voice{
+  background-color: #55DFB4;
+  width: 80%;
+  height:4px;
 }
 
-#text-voice {
-  border-bottom: 4px solid #55dfb4;
-}
+
 
 .flexbox {
   display: flex;
@@ -423,6 +451,11 @@ section {
 input[type='checkbox'] {
   appearance: auto;
   background-color: #08a6e4;
+}
+
+#check-val{
+  width: 22px;
+  height: 22px;
 }
 
 .boton-card {
