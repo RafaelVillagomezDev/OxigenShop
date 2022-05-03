@@ -125,6 +125,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 90px;
 }
 
 #logo {
@@ -136,12 +137,13 @@ body {
 }
 
 #logo h1 {
+  margin: 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-size: 32px;
-  font-style: normal;
+  font-size: 26px;
   line-height: 37px;
   color: #08a6e4;
+  font-weight: bold;
 }
 
 #pricing{
@@ -163,7 +165,7 @@ body {
 
 #menu ul li {
   display: inline;
-  margin-left: 120px;
+  margin-left: 30px;
 }
 
 #menu ul li a {
@@ -176,12 +178,13 @@ body {
   text-transform: uppercase;
   color: #a5a5a5;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-family: 'Open Sans', sans-serif;
 }
 
 #menu ul li a:hover {
   color: black;
+  font-weight: bold !important;
   border-bottom: 4px solid #08a6e4;
 }
 
@@ -614,6 +617,8 @@ footer p {
     
   }
 
+
+
   .nav-mobile{
     
     position: fixed; 
@@ -637,10 +642,9 @@ footer p {
     line-height: 15px;
     letter-spacing: 3.28px;
     text-transform: uppercase;
-    color: #a5a5a5;
-    font-style: normal;
+    color: #A5A5A5;
     font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .nav-mobile ul {
@@ -653,7 +657,8 @@ footer p {
     margin-bottom: 1rem;
   }
   .nav-mobile ul li a:hover {
-    color: black;
+    color:#A5A5A5;
+    font-weight: bold;
     border-bottom: 4px solid #08a6e4;
   }
 
@@ -803,7 +808,7 @@ footer p {
 
   /*LOGO*/
   #logo h1 {
-    font-size: 15px;
+    font-size: 26px;
   }
 
   .flexbox {

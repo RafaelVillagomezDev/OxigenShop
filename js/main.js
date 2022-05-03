@@ -17,7 +17,8 @@ function send(){
      
         // alert("ERROR VALIDACION NAME ");
         Swal.fire({
-            title:'<a style="font-family:Raleway" >Error name<a>',
+            title:'<a style="font-family:Raleway" >Invalid name<a>',
+            text:'Please enter a name with more than one character',
             confirmButtonColor: '#08a6e4',
         })
         return;
@@ -28,7 +29,8 @@ function send(){
      
         // alert("ERROR VALIDACION EMAIL");
         Swal.fire({
-            title:'<a style="font-family:Raleway" >Error email<a>',
+            title:'<a style="font-family:Raleway font-size:22px"  >Invalid email</a>',
+            text:'Please enter your email address in format: yourname@example.com',
             confirmButtonColor: '#08a6e4',
         })
         return;
@@ -58,7 +60,8 @@ function sendMail(){
      
         // alert("ERROR VALIDACION EMAIL");
         Swal.fire({
-            title:'<a style="font-family:Raleway" >Error email<a>',
+            title:'<a style="font-family:Raleway font-size:22px"  >Invalid email</a>',
+            text:'Please enter your email address in format: yourname@example.com',
             confirmButtonColor: '#08a6e4',
         })
         return;
