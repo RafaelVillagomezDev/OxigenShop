@@ -32,14 +32,14 @@ function selectorPrice(e) {
       if (monedaSelect == 'GBP') {
         priceBasic.innerHTML =
           parseInt(parseInt(priceBasic.innerHTML.substring(0, 1)) * valGBP) +
-          ' ₤'
+          '₤'
         priceProfesional.innerHTML =
           parseInt(
             parseInt(priceProfesional.innerHTML.substring(0, 2)) * valGBP,
-          ) + ' ₤'
+          ) + '₤'
         pricePremium.innerHTML =
           parseInt(parseInt(pricePremium.innerHTML.substring(0, 2)) * valGBP) +
-          ' ₤'
+          '₤'
       }
     })
 }

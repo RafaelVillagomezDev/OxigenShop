@@ -36,6 +36,7 @@ body {
   padding: 1rem;
   border-radius: 360px;
   border: #08a6e4 solid 2px;
+  z-index: 1;
 }
 
 /*SCROLL BAR*/
@@ -678,6 +679,11 @@ footer p {
 
 @media (max-width: 688px) {
   /*Card*/
+  #btn-up {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+  }
   .card {
     width: 75%;
   }
@@ -918,6 +924,11 @@ footer p {
 
 @media (max-width: 1294px) {
   /*POPUP*/
+  #btn-up {
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+  }
   #div-laptop {
     margin-top: 28px;
   }
