@@ -670,6 +670,12 @@ footer p {
 }
 
 /*---------Mobilee Layout------------*/
+@media (min-width: 700px) {
+  .nav-mobile {
+    display: none !important;
+  }
+}
+
 @media (max-width: 688px) {
   /*Card*/
   .card {

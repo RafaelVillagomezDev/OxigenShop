@@ -625,9 +625,15 @@ footer p {
 
 
 /*---------Mobilee Layout------------*/
-
+@media (min-width: 700px) {
+  .nav-mobile{
+    display: none!important;
+  }
+}
 @media (max-width: 688px) {
 /*Card*/
+
+
 .card{
   width: 75%;
 }
@@ -851,6 +857,8 @@ footer p {
 
 @media (max-width: 810px) {
   /*POPUP*/
+
+  
   .card-text {
     // padding: 0 3rem;
     color: #000000;
@@ -880,8 +888,11 @@ footer p {
   }
 }
 
+
+
 @media (max-width: 1294px) {
   /*POPUP*/
+
   #div-laptop{
     margin-top: 28px;
   }
