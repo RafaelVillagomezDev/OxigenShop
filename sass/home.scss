@@ -299,7 +299,7 @@ section {
 }
 
 .card {
-  width: 50%;
+  width: 60%;
   padding: 3rem 3rem;
   background-color: #ffffff;
   border: 1px solid #e8e9ed;
@@ -307,8 +307,15 @@ section {
 }
 
 .card-text {
-  padding: 0 3rem;
+  // padding: 0 3rem;
   color: #000000;
+  padding-right: 13rem;
+}
+.card-text2{
+  color: #000000;
+  position:relative;
+  padding-right: 18rem;
+   left:295px
 }
 
 .card-text h1 {
@@ -318,8 +325,22 @@ section {
   font-size: 32px;
   line-height: 42px;
 }
-
+.card-text2 h1{
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 2px;
+}
 .card-text p {
+  line-height: 22px;
+  font-family: 'Open sans', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 12px;
+}
+.card-text2 p{
   line-height: 22px;
   font-family: 'Open sans', sans-serif;
   font-style: normal;
@@ -330,7 +351,7 @@ section {
 
  #eyeliner-laptop{
    background-color: #FB3B64;
-   width: 80%;
+   width: 70%;
    height:4px;
  }
 
@@ -719,6 +740,7 @@ footer p {
 
   #text-phone {
     border-bottom: none;
+    position:relative !important; left: 235px i !important;
   }
 
   #text-voice {
@@ -804,7 +826,11 @@ footer p {
   footer p{
       font-size: 10px;
   }
-
+  .card-text {
+    // padding: 0 3rem;
+    color: #000000;
+    padding-right: 1rem;
+  }
 
 }
 
@@ -812,6 +838,17 @@ footer p {
 
 @media (max-width: 810px) {
   /*POPUP*/
+  .card-text {
+    // padding: 0 3rem;
+    color: #000000;
+    padding-right: 1rem;
+  }
+  .card-text2 {
+    // padding: 0 3rem;
+    color: #000000;
+    padding-right: 1rem;
+    left: 0px;
+  }
 
   .popup {
     height: 34rem;
@@ -834,6 +871,17 @@ footer p {
   /*POPUP*/
   #div-laptop{
     margin-top: 28px;
+  }
+
+  .card-text {
+    // padding: 0 3rem;
+    color: #000000;
+    padding-right: 1rem;
+  }
+  .card-text2{
+    color: #000000;
+    padding-right: 1rem;
+    left: 0px;
   }
   .flexbox {
     display: flex;
