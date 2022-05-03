@@ -317,8 +317,8 @@ section {
 }
 
 .card {
-  width: 74%;
-  padding: 1rem 1rem;
+  width: 50%;
+  padding: 3rem 3rem;
   background-color: #ffffff;
   border: 1px solid #e8e9ed;
   border-radius: 5px;
@@ -484,10 +484,7 @@ section {
 }
 
 input[type='checkbox'] {
-  -webkit-appearance: auto;
-     -moz-appearance: auto;
-          appearance: auto;
-  background-color: #08a6e4;
+  background-color: rebeccapurple !important;
 }
 
 #check-val {
@@ -500,7 +497,7 @@ input[type='checkbox'] {
   color: #f7f7f7;
   font-family: 'Open Sans';
   font-weight: 700;
-  font-size: 13px;
+  font-size: 16px;
   position: relative;
   top: 7rem;
   width: 165px;
@@ -512,6 +509,11 @@ input[type='checkbox'] {
 }
 
 /*Form Question*/
+.form-control {
+  color: #000000;
+  font-weight: bold;
+}
+
 .form-question {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,6 +550,7 @@ input[type='text'] {
   margin-bottom: 1rem;
   border: none;
   border-bottom: 1px solid #95989a;
+  outline: none;
 }
 
 .name-text {
@@ -631,6 +634,10 @@ footer p {
 
 /*---------Mobilee Layout------------*/
 @media (max-width: 688px) {
+  /*Card*/
+  .card {
+    width: 75%;
+  }
   /*POPUP*/
   .popup {
     height: 38rem;
@@ -852,8 +859,22 @@ footer p {
   }
 }
 
-@media (max-width: 1356px) {
+@media (max-width: 1294px) {
   /*POPUP*/
+  #div-laptop {
+    margin-top: 28px;
+  }
+  .flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: justify;
+  }
   /*LOGO*/
   .popup {
     min-height: 30rem;
