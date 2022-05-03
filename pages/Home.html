@@ -53,8 +53,9 @@
         <i class="fa-solid fa-xmark" id="close-nav"  ></i>
         <ul>
           <li><a href="#">why us</a></li>
-          <li><a href="#">beneficts</a></li>
+          <li><a href="#">benefits</a></li>
           <li><a href="#">prices</a></li>
+          <li><a href="#">contact</a></li>
         </ul>
       </div>
 
@@ -149,6 +150,16 @@
             </div>
         </div>
       </section>
+
+      <!---Select Price -->
+      <div class="select-price">
+          <select id="type-price" onchange="selectorPrice(event)">
+            <option value="USD" selected>USD -$</option>
+            <option value="GBP">GBP - ₤</option>
+            <option value="EUR">EUR - €</option>
+          </select>
+      </div>
+
       <!--Section Card Price-->
       <section style="background-color:#FFFFFF; margin: 0rem 2rem;">
           <h1 id="pricing" >Pricin</h1>
@@ -156,7 +167,7 @@
             <div class="flex-price" style="border: 1px solid #fb3b64">
               <div  class="card-price-text" id="card-basic-text">
                 <h1>Basic</h1>
-                <span>0$</span>
+                <span id="price-text-basic">0$</span>
               </div>
               <div  class="card-price-box" id="card-basic-box">
               
@@ -173,7 +184,7 @@
             <div class="flex-price" style="border: 1px solid #07ACE6;">
               <div class="card-price-text" id="card-profesional-text">
                 <h1>Profesional</h1>
-                <span style="color: #07ACE6;">25$</span>
+                <span id="price-text-profesional" style="color: #07ACE6;">25$</span>
               </div>
               <div class="card-price-box"  id="card-profesional-box">
                
@@ -190,7 +201,7 @@
             <div class="flex-price" id="card-premium" style="border:1px solid #55DFB4">
               <div  class="card-price-text" id="card-profesional-text" >
                 <h1>Premium</h1>
-                <span style="color: #55DFB4;">60$</span>
+                <span  id="price-text-premium" style="color: #55DFB4;">60$</span>
                 
               </div>
               <div  class="card-price-box"  id="card-profesional-box">

@@ -13,6 +13,19 @@ body {
   opacity: 80%;
 }
 
+/*Selector Price*/
+.select-price {
+  position: relative;
+  float: right;
+  right: 82px;
+  top: 72px;
+}
+
+.select-price select {
+  height: 33px;
+  outline: none;
+}
+
 /*ARROE BTN*/
 #btn-up {
   position: fixed;
@@ -657,9 +670,8 @@ footer p {
   }
 
   .nav-mobile ul li a:hover {
-    color: #A5A5A5;
+    color: black;
     font-weight: bold;
-    border-bottom: 4px solid #08a6e4;
   }
 
   #close-nav {
