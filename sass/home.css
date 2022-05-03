@@ -472,7 +472,7 @@ section {
 }
 
 .flex-price {
-  width: 372px;
+  width: 22rem;
   height: 421px;
   background-color: #ffffff;
   -webkit-box-sizing: border-box;
@@ -514,6 +514,7 @@ section {
 
 .card-price-box label {
   line-height: 2rem;
+  margin-right: 2rem;
 }
 
 .contact {
@@ -531,13 +532,12 @@ input[type='checkbox'] {
 }
 
 .boton-card {
-  position: static;
   color: #f7f7f7;
   font-family: 'Open Sans';
   font-weight: 700;
   font-size: 16px;
   position: relative;
-  top: 7rem;
+  top: 4rem;
   width: 165px;
   height: 50px;
   -webkit-box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
@@ -684,6 +684,11 @@ footer p {
     bottom: 5rem;
     right: 1rem;
   }
+  .boton-card {
+    position: relative;
+    top: 1rem;
+    right: 4rem;
+  }
   .card {
     width: 75%;
   }
@@ -819,6 +824,14 @@ footer p {
             flex-direction: column;
   }
   .flex-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 293px;
     height: 251px;
     border: 1px solid #3f5546;
@@ -826,8 +839,8 @@ footer p {
             box-sizing: border-box;
     border-radius: 18px;
   }
-  .boton-card {
-    top: 3rem;
+  .flex-price div {
+    width: 50%;
   }
   .card-price-text h1 {
     font-size: 20px;
