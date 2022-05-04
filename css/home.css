@@ -13,6 +13,19 @@ body {
   opacity: 80%;
 }
 
+/*Selector Price*/
+.select-price {
+  position: relative;
+  float: right;
+  right: 82px;
+  top: 72px;
+}
+
+.select-price select {
+  height: 33px;
+  outline: none;
+}
+
 /*ARROE BTN*/
 #btn-up {
   position: fixed;
@@ -22,6 +35,7 @@ body {
   padding: 1rem;
   border-radius: 360px;
   border: #08a6e4 solid 2px;
+  z-index: 1;
 }
 
 /*SCROLL BAR*/
@@ -110,6 +124,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 90px;
 }
 
 #logo {
@@ -121,12 +136,13 @@ body {
 }
 
 #logo h1 {
+  margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  font-size: 32px;
-  font-style: normal;
+  font-size: 26px;
   line-height: 37px;
   color: #08a6e4;
+  font-weight: bold;
 }
 
 #pricing {
@@ -149,7 +165,7 @@ body {
 
 #menu ul li {
   display: inline;
-  margin-left: 120px;
+  margin-left: 30px;
 }
 
 #menu ul li a {
@@ -162,12 +178,13 @@ body {
   text-transform: uppercase;
   color: #a5a5a5;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bold;
   font-family: "Open Sans", sans-serif;
 }
 
 #menu ul li a:hover {
   color: black;
+  font-weight: bold !important;
   border-bottom: 4px solid #08a6e4;
 }
 
@@ -277,16 +294,23 @@ section {
 }
 
 .card {
-  width: 74%;
-  padding: 1rem 1rem;
+  width: 60%;
+  padding: 3rem 3rem;
   background-color: #ffffff;
   border: 1px solid #e8e9ed;
   border-radius: 5px;
 }
 
 .card-text {
-  padding: 0 3rem;
   color: #000000;
+  padding-right: 13rem;
+}
+
+.card-text2 {
+  color: #000000;
+  position: relative;
+  padding-right: 18rem;
+  left: 295px;
 }
 
 .card-text h1 {
@@ -295,6 +319,14 @@ section {
   font-weight: bold;
   font-size: 32px;
   line-height: 42px;
+}
+
+.card-text2 h1 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 2px;
 }
 
 .card-text p {
@@ -306,9 +338,18 @@ section {
   padding-bottom: 12px;
 }
 
+.card-text2 p {
+  line-height: 22px;
+  font-family: "Open sans", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 12px;
+}
+
 #eyeliner-laptop {
   background-color: #FB3B64;
-  width: 80%;
+  width: 70%;
   height: 4px;
 }
 
@@ -381,7 +422,7 @@ section {
 }
 
 .flex-price {
-  width: 372px;
+  width: 22rem;
   height: 421px;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -420,6 +461,7 @@ section {
 
 .card-price-box label {
   line-height: 2rem;
+  margin-right: 2rem;
 }
 
 .contact {
@@ -428,8 +470,7 @@ section {
 }
 
 input[type=checkbox] {
-  appearance: auto;
-  background-color: #08a6e4;
+  background-color: rebeccapurple !important;
 }
 
 #check-val {
@@ -438,13 +479,12 @@ input[type=checkbox] {
 }
 
 .boton-card {
-  position: static;
   color: #f7f7f7;
   font-family: "Open Sans";
   font-weight: 700;
-  font-size: 13px;
+  font-size: 16px;
   position: relative;
-  top: 7rem;
+  top: 4rem;
   width: 165px;
   height: 50px;
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
@@ -453,6 +493,11 @@ input[type=checkbox] {
 }
 
 /*Form Question*/
+.form-control {
+  color: #000000;
+  font-weight: bold;
+}
+
 .form-question {
   display: flex;
   flex-direction: row;
@@ -482,6 +527,7 @@ input[type=text] {
   margin-bottom: 1rem;
   border: none;
   border-bottom: 1px solid #95989a;
+  outline: none;
 }
 
 .name-text {
@@ -553,7 +599,29 @@ footer p {
 }
 
 /*---------Mobilee Layout------------*/
+@media (min-width: 700px) {
+  .nav-mobile {
+    display: none !important;
+  }
+}
 @media (max-width: 688px) {
+  /*Card*/
+  #btn-up {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+  }
+
+  .boton-card {
+    position: relative;
+    top: 1rem;
+    right: 4rem;
+  }
+
+  .card {
+    width: 75%;
+  }
+
   /*POPUP*/
   .popup {
     height: 38rem;
@@ -604,10 +672,9 @@ footer p {
     line-height: 15px;
     letter-spacing: 3.28px;
     text-transform: uppercase;
-    color: #a5a5a5;
-    font-style: normal;
+    color: #A5A5A5;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .nav-mobile ul {
@@ -622,7 +689,7 @@ footer p {
 
   .nav-mobile ul li a:hover {
     color: black;
-    border-bottom: 4px solid #08a6e4;
+    font-weight: bold;
   }
 
   #close-nav {
@@ -669,6 +736,8 @@ footer p {
 
   #text-phone {
     border-bottom: none;
+    position: relative !important;
+    left: 235px i !important;
   }
 
   #text-voice {
@@ -682,6 +751,9 @@ footer p {
   }
 
   .flex-price {
+    display: flex;
+    align-items: center;
+    align-content: center;
     width: 293px;
     height: 251px;
     border: 1px solid #3f5546;
@@ -689,8 +761,8 @@ footer p {
     border-radius: 18px;
   }
 
-  .boton-card {
-    top: 3rem;
+  .flex-price div {
+    width: 50%;
   }
 
   .card-price-text h1 {
@@ -755,17 +827,33 @@ footer p {
   footer p {
     font-size: 10px;
   }
+
+  .card-text {
+    color: #000000;
+    padding-right: 1rem;
+  }
 }
 /*Card TABLET*/
 @media (max-width: 810px) {
   /*POPUP*/
+  .card-text {
+    color: #000000;
+    padding-right: 1rem;
+  }
+
+  .card-text2 {
+    color: #000000;
+    padding-right: 1rem;
+    left: 0px;
+  }
+
   .popup {
     height: 34rem;
   }
 
   /*LOGO*/
   #logo h1 {
-    font-size: 15px;
+    font-size: 26px;
   }
 
   .flexbox {
@@ -775,8 +863,36 @@ footer p {
     text-align: justify;
   }
 }
-@media (max-width: 1356px) {
+@media (max-width: 1294px) {
   /*POPUP*/
+  #btn-up {
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+  }
+
+  #div-laptop {
+    margin-top: 28px;
+  }
+
+  .card-text {
+    color: #000000;
+    padding-right: 1rem;
+  }
+
+  .card-text2 {
+    color: #000000;
+    padding-right: 1rem;
+    left: 0px;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+  }
+
   /*LOGO*/
   .popup {
     min-height: 30rem;
