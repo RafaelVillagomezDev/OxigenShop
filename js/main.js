@@ -16,7 +16,16 @@ function selectorPrice(e) {
     .then((data) => {
       const valEur = data.usd['eur']
       const valGBP = data.usd['gbp']
-
+      if (monedaSelect=='USD'){
+        priceBasic.innerHTML =
+        parseInt(parseInt(priceBasic.innerHTML.substring(0, 1)) ) +
+        '$'
+      priceProfesional.innerHTML =
+        parseInt(
+          parseInt(priceProfesional.innerHTML.substring(0, 2))) + '$'
+      pricePremium.innerHTML =
+        parseInt(parseInt(pricePremium.innerHTML.substring(0, 2))) +'$'
+      }
       if (monedaSelect == 'EUR') {
         priceBasic.innerHTML =
           parseInt(parseInt(priceBasic.innerHTML.substring(0, 1)) * valEur) +
